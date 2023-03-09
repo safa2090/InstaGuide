@@ -16,13 +16,23 @@ z-index: 999;
 justify-content: space-between;
 display: flex;
 align-items: center;
-padding: 10px 200px;
+padding: 20px 200px;
 }
 
 .logo{
-    height: 100px;
-    width: 200px;
-    position: relative;
+    color: black;
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 600;
+    font-style:italic;
+}
+
+#id{
+    color:#dd0f6c;
+}
+
+.logo:hover{
+    color:#d62976;
 }
 
 .navigation a{
@@ -30,11 +40,12 @@ padding: 10px 200px;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
+    font-style: oblique;
     padding-left: 30px;
 }
 
 .navigation a:hover{
-    color: #fa7e1e;
+    color: black;
 }
 
 section{
@@ -47,50 +58,56 @@ section{
     display: flex;
     align-items: center;
     background: url(photos/11.jpg) no-repeat;
-    background-size: cover;
+    background-size:contain;
+    background-position: center;
     background-attachment: fixed;
-    opacity:0.8;
+    opacity:0.85;
+}
+
+main::before{
+    
+}
+
+.main h2:hover{
+    color: black;
+}
+
+.main h3:hover{
+    color: black;
 }
 
 .main h2{
-    color: black;
-    font-size: 2.2em;
+    color:#dd0f6c;
+    font-size: 2.5em;
     font-weight: 600;
+    font-style: oblique;
 }
 
 .main h3{
-    color:black;
-    font-size: 2.2em;
+    color:#dd0f6c;
+    font-size: 2.5em;
     font-weight: 600;
+    font-style: oblique;
     margin-top: 10px;
 }
 
-.profils{
-    color:#d62976;
+.icon1{
+    color: black;
     background-color: white;
     text-decoration: none;
-    font-size: 1.2;
-    font-weight: 500;
+    font-size: 1.5em;
+    font-weight: 600;
+    font-style: oblique;
     display: inline-block;
     padding: 5px 5px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     border-radius: 15px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.profils:hover{
-    background-color: wheat;
-}
-
-.icon {
-    color: white;
-    text-decoration: none;
-    font-size: 1em;
-}
-
-.icon:hover{
-    color:#d62976;
+.icon1:hover{
+    background-color: rgb(219, 194, 196);
 }
 
 .title{
@@ -98,21 +115,22 @@ section{
     justify-content: center;
     color:#d62976;
     font-size: 2em;
+    font-style: italic;
     letter-spacing: 1.5px;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 30px;
+    align-content:center;
 }
 .About{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .card{
-    background-color: wheat;
+    background-color: rgb(219, 194, 196);
     width: 21.25em;
-    box-shadow: 0 5px 25px rgb(253, 243, 225);
+    box-shadow: 0 5px 25px rgb(223, 178, 182);
     border-radius: 5px;
     margin: 15px;
     padding: 25px;
@@ -136,6 +154,5 @@ section{
     font-size: 1.5em;
     font-weight: 700;
     margin: 10px;
-
 }
 
