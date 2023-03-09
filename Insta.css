@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+background-color: white;
+width: 100%;
+position: fixed;
+z-index: 999;
+justify-content: space-between;
+display: flex;
+align-items: center;
+padding: 10px 200px;
+}
+
+.logo{
+    height: 100px;
+    width: 200px;
+    position: relative;
+}
+
+.navigation a{
+    color: #d62976;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #fa7e1e;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#safa{
+    background: url(photos/1.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity:0.6;
+}
+
+.main h2{
+    color: black;
+    font-size: 2.2em;
+    font-weight: 600;
+}
+
+.main h3{
+    color:black;
+    font-size: 2.2em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.profils{
+    color:#d62976;
+    background-color: white;
+    text-decoration: none;
+    font-size: 1.2;
+    font-weight: 500;
+    display: inline-block;
+    padding: 5px 5px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.profils:hover{
+    background-color: wheat;
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.icon:hover{
+    color:#d62976;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color:#d62976;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.About{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: wheat;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgb(253, 243, 225);
+    border-radius: 5px;
+    margin: 15px;
+    padding: 25px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: black;
+    font-size: 50px;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 10px;
+
+}
+
