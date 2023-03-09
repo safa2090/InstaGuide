@@ -46,13 +46,10 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-}
-
-#safa{
     background: url(photos/1.jpg) no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    opacity:0.6;
+    opacity:0.8;
 }
 
 .main h2{
