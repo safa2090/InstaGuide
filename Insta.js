@@ -1,4 +1,4 @@
-let array1 = ["test", "test", "test", "test", "test"];
+/*let array1 = ["test", "test", "test", "test", "test"];
 let array2 = ["hello", "hello", "hello", "hello", "hello"];
 let array3 = ["world", "world", "world", "world", "world", "world"];
 
@@ -30,4 +30,20 @@ $("#show").on("click", () => {
   $("#btn1").show();
   $("#btn2").show();
   $("#btn3").show();
-});
+});*/
+
+var images = []; // Initialize an empty array
+
+var imagesArray = [];
+		$(document).ready(function(){
+			$.ajax({
+				url: 'photos', // Path to the folder containing the images
+				success: function (data) {
+					$(data).find("a").attr("href", function (i, val) {
+						if (val.match(/\.(jpe?g|png|gif)$/)) { // Filter out non-image files
+							imagesArray.push('<img src="img/' + val + '">');
+						}
+					});
+				}
+			});
+		});
