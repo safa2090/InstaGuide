@@ -1,42 +1,78 @@
-/*let array1 = ["test", "test", "test", "test", "test"];
-let array2 = ["hello", "hello", "hello", "hello", "hello"];
-let array3 = ["world", "world", "world", "world", "world", "world"];
+/*var fashionArray = [];
+var travelArray = [];
+var cookingArray = [];
+var sarcasmArray = [];
 
-function showCategories(array) {
-  $("#btn1").hide();
-  $("#btn2").hide();
-  $("#btn3").hide();
-  $("#container").empty();
-  for (let i = 0; i < array.length; i++) {
-    const element = array[i];
-    $("#container").append(<p> ${element} </p>);
-  }
-}
 
-$("#btn1").on("click", () => {
-  showCategories(array1);
-});
+$(document).ready(function() {
 
-$("#btn2").on("click", () => {
-  showCategories(array2);
-});
+  $(".fashion img").each(function() {
+    fashionArray.push($(this).attr("src"));
+  });
 
-$("#btn3").on("click", () => {
-  showCategories(array3);
-});
+  $(".travel img").each(function() {
+    travelArray.push($(this).attr("src"));
+  });
 
-$("#show").on("click", () => {
-  $("#container").empty();
-  $("#btn1").show();
-  $("#btn2").show();
-  $("#btn3").show();
-});*/
+  $(".cooking img").each(function() {
+    cookingArray.push($(this).attr("src"));
+  });
 
-var imageArray = [];
+  $(".sarcasm img").each(function() {
+    sarcasmArray.push($(this).attr("src"));
+  });})*/
 
-$('img').each(function() {
-    imageArray.push($(this).attr('src'));
-});
+  $(document).ready(function() {
 
-console.log(imageArray);
+    $('.but').click(function(){
+      $(this).addClass('buttons').siblings().removeClass('buttons');
+      var filter=$(this).attr('data-filter')
+      if(filter == 'fashion'){
+        $('.fashion').show(400);
+      }else{
+        $('.fashion').not('.'+filter).hide(200)
+        $('.fashion').filter('.'+filter).show(400)
+      }
+      if(filter == 'travel'){
+        $('.travel').show(400);
+      }else{
+        $('.travel').not('.'+filter).hide(200)
+        $('.travel').filter('.'+filter).show(400)
+      }
+      if(filter == 'cooking'){
+        $('.cooking').show(400);
+      }else{
+        $('.cooking').not('.'+filter).hide(200)
+        $('.cooking').filter('.'+filter).show(400)
+      }
+      if(filter == 'sarcasm'){
+        $('.sarcasm').show(400);
+      }else{
+        $('.sarcasm').not('.'+filter).hide(200)
+        $('.sarcasm').filter('.'+filter).show(400)
+      }
+    })
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
