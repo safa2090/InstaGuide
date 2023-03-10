@@ -32,18 +32,11 @@ $("#show").on("click", () => {
   $("#btn3").show();
 });*/
 
-var images = []; // Initialize an empty array
+var imageArray = [];
 
-var imagesArray = [];
-		$(document).ready(function(){
-			$.ajax({
-				url: 'photos', // Path to the folder containing the images
-				success: function (data) {
-					$(data).find("a").attr("href", function (i, val) {
-						if (val.match(/\.(jpe?g|png|gif)$/)) { // Filter out non-image files
-							imagesArray.push('<img src="img/' + val + '">');
-						}
-					});
-				}
-			});
-		});
+$('img').each(function() {
+    imageArray.push($(this).attr('src'));
+});
+
+console.log(imageArray);
+
